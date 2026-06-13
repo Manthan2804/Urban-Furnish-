@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+ <nav>
+    <a href="main.html"><img src="logos.png" alt="Logo"></a>
+    <div class="nav-links">
+      <a href="main.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="auth.html"><i class="fa-regular fa-circle-user"></i></a>
+      <a href="#"><i class="fa-regular fa-heart"></i></a>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>"<span>Renting</span> Made Simple<br>
+        Everything you need,<br>
+        in one place."</h1>
+        <br>
+    <a href="#products" class="btn">Explore Now</a>
+  </div>
+</section>
+
+<!-- Products / Services -->
+<section id="products" class="products">
+  <h2>Rent Our Furniture</h2>
+  <div class="product-grid">
+
+    <a href="livingroom.html" class="product-card">
+      <img src="sofa.jpg" alt="Sofa">
+      <h3>Living Room</h3>
+      <p>Starting ₹499/month</p>
+    </a>
+
+    <a href="bedroom.html" class="product-card">
+      <img src="bed.png" alt="Bed">
+      <h3>BedRoom</h3>
+      <p>Starting ₹799/month</p>
+    </a>
+
+    <a href="storage.html" class="product-card">
+      <img src="wardrobe.jpg" alt="Wardrobe">
+      <h3>Storage</h3>
+      <p>Starting ₹699/month</p>
+    </a>
+    <a href="product.html" class="product-card">
+      <img src="dinning.png" alt="Dining">
+      <h3>Dinning</h3>
+      <p>Starting ₹699/month</p>
+    </a>
+    <a href="study.html" class="product-card">
+      <img src="study.jpg" alt="Study">
+      <h3>Study</h3>
+      <p>Starting ₹699/month</p>
+    </a>
+    <a href="appliances.html" class="product-card">
+      <img src="app.png" alt="Appliances">
+      <h3>Appliances</h3>
+      <p>Starting ₹699/month</p>
+    </a>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="about-text">
+    <img src="about.png" alt="Wardrobe">
+  </div>
+</section>
+<section id="deals" class="deals">
+  <div class="deals-text">
+    <h2><i class="fa-solid fa-hand-holding-dollar"></i> Deals of the day <img src="best-deals.png" class="best-deal-image" alt="best-deal-image"> </h2>
+  </div>
+<section class="deals-section">
+  <div class="slider-container">
+    <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+    <div class="slider" id="dealSlider">
+      
+      <a href="livingroom.html" class="deal-card">
+        <img src="beanbag.avif" alt="Sofa">
+        <h3>Bean Bag</h3>
+        <h1>Flat 40% Off</h1>
+        <p>₹45/month</p>
+      </a>
+
+      <a href="product.html" class="deal-card">
+        <img src="table1.jpg" alt="Bed">
+        <h3>Diining set from woodies</h3>
+        <h1>Flat 40% Off</h1>
+        <p>₹379/month</p>
+      </a>
+
+      <a href="storage.html" class="deal-card">
+        <img src="amirah1.webp" alt="Wardrobe">
+        <h3>Wardrobe from Godrej</h3>
+        <h1>Flat 40% Off</h1>
+        <p>₹259/month</p>
+      </a>
+
+      <a href="bedroom.html" class="deal-card">
+        <img src="bed1.jpg" alt="Dining">
+        <h3>Queen Size bed from Godrej</h3>
+        <h1>Flat 40% Off</h1>
+        <p>₹599/month</p>
+      </a>
+
+      <a href="study.html" class="deal-card">
+        <img src="study.jpg" alt="Study">
+        <h3>Study Table</h3>
+        <p>₹399/month</p>
+      </a>
+
+      <a href="appliances.html" class="deal-card">
+        <img src="app.png" alt="Chair">
+        <h3>Chair</h3>
+        <p>₹299/month</p>
+      </a>
+
+    </div>
+    
+<button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+
+  </div>
+</section>
+
+</section>
+
+<!-- Advertisement and customer reviews Section -->
+<section id="reviews" class="reviews">
+  <div class="reviews-text">
+    <h2><i class="fa-regular fa-face-laugh-beam"></i> Our Happy Customers</h2>
+  </div>
+  
+  <section class="reviews-section">
+    <div class="slider-container">
+      <button class="slider-btn left" onclick="slideLeftReview()">&#10094;</button>
+      
+      <div class="slider" id="reviewSlider">
+
+        <div class="review-card">
+          <img src="bed1.jpg" alt="Bed">
+          <p>"Very comfortable bed! Renting from here was super easy and affordable."</p>
+        </div>
+
+        <div class="review-card">
+          <img src="sofa.avif" alt="Sofa">
+          <p>"The sofa is exactly as described and delivery was quick."</p>
+        </div>
+
+        <div class="review-card">
+          <img src="table1.jpg" alt="Dining Table">
+          <p>"Dining set is sturdy and stylish, perfect for my apartment."</p>
+        </div>
+
+        <div class="review-card">
+          <img src="beanbag.avif" alt="Bean Bag">
+          <p>"Bean bag is super comfy, my kids love it!"</p>
+        </div>
+
+      </div>
+      
+      <button class="slider-btn right" onclick="slideRightReview()">&#10095;</button>
+    </div>
+  </section>
+</section>
+
+
+<!-- Footer -->
+<footer class="section-p1">
+	<div class="col">
+		<img src="logos.png" class="bottomlogo">
+		<h4>Contact</h4>
+		<p><strong>Address:</strong> Chitkara University,Rajpura Chandigarh</p>
+		<p><strong>Phone:</strong> 9696969969</p>
+		<p><strong>Hours:</strong>: 10:00-18:00 Mon-Sat</p>
+		<div class="follow">
+			<h4>Follow Us</h4>
+			<div class="icon">
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-youtube"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-x-twitter"></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<h4>About</h4>
+		<a href="about.html">About Us</a>
+		<a href="contact.html">Delievery Information</a>
+		<a href="contact.html">Privacy Policy</a>
+		<a href="contact.html">Terms and Conditions</a>
+		<a href="contact.html">Contact Us</a>
+	</div>
+
+	<div class="col">
+		<h4>My Account</h4>
+		<a href="auth.html">Sign In</a>
+		<a href="#" onclick="openCartDrawer(); return false;">View Cart</a>
+		<a href="#" onclick="alert('Order tracking feature coming soon! Please contact us for order status.'); return false;">Track My Order</a>
+		<a href="contact.html">Help</a>
+	</div>
+	<div class="col install">
+		<h4>Payment Gateways:</h4>
+		<p>Secured payments Gateways</p>
+		<img src="pay.png"alt="pay">
+	</div>
+
+
+</footer>
+<div class="copyright">
+		<p>&copy grp 4, batch 18 - Urban Fashion</p>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>

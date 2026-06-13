@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Rental Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body class="product-page">
+  <!-- Navbar -->
+  <nav>
+    <a href="main.html"><img src="logos.png" alt="Logo"></a>
+    <div class="nav-links">
+      <a href="main.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="auth.html"><i class="fa-regular fa-circle-user"></i></a>
+      <a href="#"><i class="fa-regular fa-heart"></i></a>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </nav>
+
+  <section class="products" style="margin-top:100px;">
+    <h2 class="section-title">Our Products</h2>
+    <div class="product-grid">
+      <!-- Example product cards -->
+      <a href="livingroom.html" class="product-card">
+  <img src="sofa.jpg" alt="Sofa">
+  <h3>Living Room</h3>
+  <p>Starting ₹499/month</p>
+</a>
+<a href="bedroom.html" class="product-card">
+  <img src="bed.png" alt="Bed">
+  <h3>BedRoom</h3>
+  <p>Starting ₹799/month</p>
+</a>
+<a href="storage.html" class="product-card">
+  <img src="wardrobe.jpg" alt="Wardrobe">
+  <h3>Storage</h3>
+  <p>Starting ₹699/month</p>
+</a>
+<a href="study.html" class="product-card">
+  <img src="study.jpg" alt="Study">
+  <h3>Study</h3>
+  <p>Starting ₹699/month</p>
+</a>
+<a href="appliances.html" class="product-card">
+  <img src="app.png" alt="Appliances">
+  <h3>Appliances</h3>
+  <p>Starting ₹699/month</p>
+</a>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+      <img src="logos.png" class="bottomlogo">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> Chitkara University,Rajpura Chandigarh</p>
+      <p><strong>Phone:</strong> 9696969969</p>
+      <p><strong>Hours:</strong>: 10:00-18:00 Mon-Sat</p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Delievery Information</a>
+      <a href="contact.html">Privacy Policy</a>
+      <a href="contact.html">Terms and Conditions</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="auth.html">Sign In</a>
+      <a href="#" onclick="openCartDrawer(); return false;">View Cart</a>
+      <a href="#" onclick="alert('Order tracking feature coming soon! Please contact us for order status.'); return false;">Track My Order</a>
+      <a href="contact.html">Help</a>
+    </div>
+    <div class="col install">
+      <h4>Payment Gateways:</h4>
+      <p>Secured payments Gateways</p>
+      <img src="pay.png"alt="pay">
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>&copy grp 4, batch 18 - Urban Fashion</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

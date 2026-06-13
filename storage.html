@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storage Products | Rental Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body class="product-page">
+  <nav>
+    <img src="logos.png" alt="Logo">
+    <div class="nav-links">
+      <a href="main.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="auth.html"><i class="fa-regular fa-circle-user"></i></a>
+      <a href="#"><i class="fa-regular fa-heart"></i></a>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </nav>
+  <section class="products" style="margin-top:100px;">
+    <h2 class="section-title">Storage Products</h2>
+    <div class="product-filter-glass" style="margin-bottom: 28px;">
+      <div class="filter-group">
+        <span class="filter-icon"><i class="fa-solid fa-tag"></i></span>
+        <select id="brandFilter" class="filter-dropdown">
+          <option value="">All Brands</option>
+          <option value="Urban Living">Urban Living</option>
+          <option value="HomeStyle">HomeStyle</option>
+          <option value="FurniCo">FurniCo</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <span class="filter-icon"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+        <select id="priceFilter" class="filter-dropdown">
+          <option value="">All Prices</option>
+          <option value="0-499">Below ₹500</option>
+          <option value="500-999">₹500 - ₹999</option>
+          <option value="1000-2000">₹1000 - ₹2000</option>
+        </select>
+      </div>
+    </div>
+    <div class="product-grid" id="storageProducts">
+      <!-- Storage products will be rendered here -->
+    </div>
+  </section>
+  <footer class="section-p1">
+    <div class="col">
+      <img src="logos.png" class="bottomlogo">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> Chitkara University,Rajpura Chandigarh</p>
+      <p><strong>Phone:</strong> 9696969969</p>
+      <p><strong>Hours:</strong>: 10:00-18:00 Mon-Sat</p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Delievery Information</a>
+      <a href="contact.html">Privacy Policy</a>
+      <a href="contact.html">Terms and Conditions</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="auth.html">Sign In</a>
+      <a href="#" onclick="openCartDrawer(); return false;">View Cart</a>
+      <a href="#" onclick="alert('Order tracking feature coming soon! Please contact us for order status.'); return false;">Track My Order</a>
+      <a href="contact.html">Help</a>
+    </div>
+    <div class="col install">
+      <h4>Payment Gateways:</h4>
+      <p>Secured payments Gateways</p>
+      <img src="pay.png"alt="pay">
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>&copy grp 4, batch 18 - Urban Fashion</p>
+  </div>
+  <script src="script.js"></script>
+  <script src="storage.js"></script>
+</body>
+</html>
